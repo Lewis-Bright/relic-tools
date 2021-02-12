@@ -6,4 +6,4 @@ At the moment, to get the build process to working, I am running
 ```
 C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe .\TextureTool.csproj /property:GenerateFullPaths=true /p:Configuration=Release /t:build /p:TargetFrameworkVersion="v3.5"
 ```
-I appear to be missing a preference file when running the actual program afterwards
+You should add a TextureToolPref.xml into the same folder as the build app so it runs properly (example can be found in `prefs` folder)
