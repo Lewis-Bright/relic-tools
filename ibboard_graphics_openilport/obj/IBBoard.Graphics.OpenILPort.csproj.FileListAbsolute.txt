@@ -1,0 +1,8 @@
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\bin\Debug\IBBoard.Graphics.OpenILPort.dll
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\bin\Debug\IBBoard.Graphics.OpenILPort.pdb
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\obj\Debug\IBBoard.Graphics.OpenILPort.dll
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\obj\Debug\IBBoard.Graphics.OpenILPort.pdb
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\bin\Release\IBBoard.Graphics.OpenILPort.dll
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\obj\Release\IBBoard.Graphics.OpenILPort.dll

@@ -1,0 +1,14 @@
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\bin\Debug\squishinterface_x64.dll
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\bin\Debug\squishinterface_x86.dll
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\bin\Debug\libsquish.so
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\bin\Debug\SquishWrapper.dll
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\bin\Debug\SquishWrapper.pdb
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\obj\Debug\SquishWrapper.dll
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\obj\Debug\SquishWrapper.pdb
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\bin\Release\squishinterface_x64.dll
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\bin\Release\squishinterface_x86.dll
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\bin\Release\libsquish.so
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\bin\Release\SquishWrapper.dll
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Lewis\Dev\CS\relic-tools\squish_wrapper\obj\Release\SquishWrapper.dll

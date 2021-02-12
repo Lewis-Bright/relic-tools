@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ibboard.co.uk/translation" xmlns="http://ibboard.co.uk/translation" elementFormDefault="qualified">
+<xs:complexType name="translationtype">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="id" type="xs:ID" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+<xs:element name="translations">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="translation" minOccurs="0" maxOccurs="unbounded" type="translationtype"/>
+    </xs:sequence>
+    <xs:attribute name="lang" type="xs:string" use="required"/>
+    <xs:attribute name="extends" type="xs:string" default=""/>
+  </xs:complexType>
+</xs:element>
+</xs:schema>

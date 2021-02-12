@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A68B7155-DC24-44F7-9AA2-F0DA9229FB6C}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IBBoard</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AssemblyName>IBBoard-Droid</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Collections\Collections.cs" />
+    <Compile Include="Collections\DictionaryUtils.cs" />
+    <Compile Include="Collections\SimpleSet.cs" />
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\CommandStack.cs" />
+    <Compile Include="CustomMath\Comparisons.cs" />
+    <Compile Include="CustomMath\IBBMath.cs" />
+    <Compile Include="CustomMath\NumberParser.cs" />
+    <Compile Include="IO\BinaryReaderBigEndian.cs" />
+    <Compile Include="IO\InvalidFileException.cs" />
+    <Compile Include="IO\StreamUtil.cs" />
+    <Compile Include="IO\UnsupportedFileTypeException.cs" />
+    <Compile Include="Lang\AbstractTranslationSet.cs" />
+    <Compile Include="Lang\ITranslatable.cs" />
+    <Compile Include="Lang\ModifiableTranslationSet.cs" />
+    <Compile Include="Lang\StringManipulation.cs" />
+    <Compile Include="Lang\Translation.cs" />
+    <Compile Include="Lang\TranslationLanguage.cs" />
+    <Compile Include="Lang\TranslationLoadException.cs" />
+    <Compile Include="Lang\TranslationXmlExtractor.cs" />
+    <Compile Include="Lang\TranslationXmlLoader.cs" />
+    <Compile Include="Lang\XmlTranslationSet.cs" />
+    <Compile Include="Limits\AbsoluteNumericLimit.cs" />
+    <Compile Include="Limits\AbstractCompositeLimit.cs" />
+    <Compile Include="Limits\AbstractLimit.cs" />
+    <Compile Include="Limits\CompositeMaximumLimit.cs" />
+    <Compile Include="Limits\CompositeMinimumLimit.cs" />
+    <Compile Include="Limits\ILimit.cs" />
+    <Compile Include="Limits\INumericLimit.cs" />
+    <Compile Include="Limits\IPercentageLimit.cs" />
+    <Compile Include="Limits\NumericSizeConstrainedLimit.cs" />
+    <Compile Include="Limits\SimpleRoundedPercentageLimit.cs" />
+    <Compile Include="Limits\UnlimitedLimit.cs" />
+    <Compile Include="Logging\FileLogger.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Logging\LogItem.cs" />
+    <Compile Include="Logging\LogNotifier.cs" />
+    <Compile Include="Logging\SilentLogger.cs" />
+    <Compile Include="Logging\TextFileLogger.cs" />
+    <Compile Include="Xml\CustomXmlResolver.cs" />
+    <Compile Include="Xml\IBBXmlResolver.cs" />
+    <Compile Include="Xml\IXmlElementName.cs" />
+    <Compile Include="Xml\XmlParseException.cs" />
+    <Compile Include="Xml\XmlTools.cs" />
+    <Compile Include="Arrays.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="EnumTools.cs" />
+    <Compile Include="EqualityChecker.cs" />
+    <Compile Include="IBBoard.cs" />
+    <Compile Include="IExtendedEnum.cs" />
+    <Compile Include="OperationFailedException.cs" />
+    <Compile Include="Preferences.cs" />
+    <Compile Include="UnixTimestamp.cs" />
+    <Compile Include="Xml\XmlResourceResolver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="COPYING.GPL" />
+    <None Include="COPYING.LGPL" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <DotNetNamingPolicy DirectoryNamespaceAssociation="PrefixedHierarchical" ResourceNamePolicy="FileFormatDefault" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <EmbeddedResource Include="schemas\translation.xsd">
+      <DeployService-Deploy>true</DeployService-Deploy>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

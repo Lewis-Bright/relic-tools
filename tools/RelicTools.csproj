@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3B2F94E-ADE9-45E1-829F-698C0F4F1CFC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>IBBoard.Relic.RelicTools</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IBBoard.Relic.RelicTools</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <HintPath>Compression\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyChunk.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataATTR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataCHAN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataDATA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataDATAIMAG.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataFBIF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataHEAD.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataINFO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataINFOGeneric.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataINFOSHDR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataINFOTPAT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataINFOTXTR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataLayer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataPTBD.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataPTBN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataPTLD.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataSSHR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyDataUnknown.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyFolder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyRawData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChunkyValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\ChunkyCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\ChunkyStructureCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\SgaFileCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\SgaFolderCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\Exception.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\FileExistsException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\FileNotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\FileNotZippedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\InvalidChunkException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\InvalidChunkValueException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\InvalidFileException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\InvalidSourceFileException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\InvalidUseException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileFormats.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LayerCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RECFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RelicBinaryReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RelicChunkReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RelicChunkyFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RelicChunkyReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RelicChunkyStructure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RSHFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTXFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SgaArchive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SgaFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SgaFolder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SgaReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WTPFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Compression\ICSharpCode.SharpZipLib.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ibboard\IBBoard.csproj">
+      <Project>{5DFD64F6-FC2B-4B4F-B92E-483BAC468105}</Project>
+      <Name>IBBoard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ibboard_graphics\IBBoard.Graphics.csproj">
+      <Project>{7CCF5C77-6038-45DE-BFA7-1A5378B3E08B}</Project>
+      <Name>IBBoard.Graphics</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

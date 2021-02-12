@@ -1,0 +1,6 @@
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\bin\Debug\IBBoard.Graphics.OpenILPort.dll
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\bin\Debug\IBBoard.Graphics.OpenILPort.pdb
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\obj\Debug\IBBoard.Graphics.OpenILPort.csprojAssemblyReference.cache
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\obj\Debug\IBBoard.Graphics.OpenILPort.csproj.CoreCompileInputs.cache
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\obj\Debug\IBBoard.Graphics.OpenILPort.dll
+C:\Users\Lewis\Dev\CS\relic-tools\ibboard_graphics_openilport\obj\Debug\IBBoard.Graphics.OpenILPort.pdb

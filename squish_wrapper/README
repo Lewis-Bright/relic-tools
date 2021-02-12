@@ -1,0 +1,5 @@
+To rebuild libsquish.so:
+ * Download libsquish 1.10 from https://code.google.com/archive/p/libsquish/downloads and extract it
+ * Patch it with "patch -p1 < path/to/SquishWrapper/libsquish-1.10.patch"
+ * Run "make all"
+ * Replace libsquish.so in the root of this project with the new version

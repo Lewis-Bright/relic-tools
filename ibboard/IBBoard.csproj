@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DFD64F6-FC2B-4B4F-B92E-483BAC468105}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>IBBoard</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IBBoard</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>False</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>True</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arrays.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\SimpleSet.cs" />
+    <Compile Include="Commands\Command.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\CommandStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomMath\Comparisons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IBBoard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IExtendedEnum.cs" />
+    <Compile Include="IO\InvalidFileException.cs" />
+    <Compile Include="IO\UnsupportedFileTypeException.cs" />
+    <Compile Include="Lang\ITranslatable.cs" />
+    <Compile Include="Lang\StringManipulation.cs" />
+    <Compile Include="Lang\Translation.cs" />
+    <Compile Include="Logging\FileLogger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\Logger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\LogItem.cs" />
+    <Compile Include="Logging\LogNotifier.cs" />
+    <Compile Include="Logging\SilentLogger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\TextFileLogger.cs" />
+    <Compile Include="OperationFailedException.cs" />
+    <Compile Include="Preferences.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnixTimestamp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Xml\CustomXmlResolver.cs" />
+    <Compile Include="Xml\IBBXmlResolver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Xml\IXmlElementName.cs" />
+    <Compile Include="Xml\XmlParseException.cs" />
+    <Compile Include="Collections\DictionaryUtils.cs" />
+    <Compile Include="CustomMath\NumberParser.cs" />
+    <Compile Include="Lang\TranslationLoadException.cs" />
+    <Compile Include="Xml\XmlTools.cs" />
+    <Compile Include="IO\BinaryReaderBigEndian.cs" />
+    <Compile Include="CustomMath\IBBMath.cs" />
+    <Compile Include="Limits\NumericSizeConstrainedLimit.cs" />
+    <Compile Include="Limits\SimpleRoundedPercentageLimit.cs" />
+    <Compile Include="Limits\AbstractLimit.cs" />
+    <Compile Include="Limits\AbsoluteNumericLimit.cs" />
+    <Compile Include="Limits\UnlimitedLimit.cs" />
+    <Compile Include="Limits\ILimit.cs" />
+    <Compile Include="Limits\IPercentageLimit.cs" />
+    <Compile Include="Limits\INumericLimit.cs" />
+    <Compile Include="EnumTools.cs" />
+    <Compile Include="Lang\TranslationXmlLoader.cs" />
+    <Compile Include="Lang\AbstractTranslationSet.cs" />
+    <Compile Include="Lang\TranslationLanguage.cs" />
+    <Compile Include="Lang\XmlTranslationSet.cs" />
+    <Compile Include="Lang\TranslationXmlExtractor.cs" />
+    <Compile Include="Limits\AbstractCompositeLimit.cs" />
+    <Compile Include="Limits\CompositeMaximumLimit.cs" />
+    <Compile Include="Limits\CompositeMinimumLimit.cs" />
+    <Compile Include="Lang\ModifiableTranslationSet.cs" />
+    <Compile Include="EqualityChecker.cs" />
+    <Compile Include="IO\StreamUtil.cs" />
+    <Compile Include="Collections\Collections.cs" />
+    <Compile Include="Xml\XmlResourceResolver.cs" />
+    <Compile Include="IO\NamedStream.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="COPYING.GPL" />
+    <None Include="COPYING.LGPL" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <DotNetNamingPolicy DirectoryNamespaceAssociation="PrefixedHierarchical" ResourceNamePolicy="FileFormatDefault" />
+          <StandardHeader Text=" This file (${FileName}) is a part of the ${ProjectName} project and is copyright ${Year} ${CopyrightHolder}&#xA;&#xA; The file and the library/program it is in are licensed and distributed, without warranty, under the GNU LGPL, either version 3 of the License or (at your option) any later version. Please see COPYING for more information and the full license." IncludeInNewFiles="True" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+    <VisualStudio />
+  </ProjectExtensions>
+  <ItemGroup>
+    <EmbeddedResource Include="schemas\translation.xsd">
+      <Gettext-ScanForTranslations>False</Gettext-ScanForTranslations>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

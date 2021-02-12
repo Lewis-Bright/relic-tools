@@ -1,0 +1,7 @@
+bin/
+obj/
+test-results/
+.*\.pidb
+.*\.suo
+.*\.userprefs
+.*\.csproj\.user
