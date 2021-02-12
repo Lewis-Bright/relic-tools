@@ -1,6 +1,0 @@
-C:\Users\Lewis\Dev\CS\relic-tools\ibboard\bin\Debug\IBBoard.dll.config
-C:\Users\Lewis\Dev\CS\relic-tools\ibboard\bin\Debug\IBBoard.dll
-C:\Users\Lewis\Dev\CS\relic-tools\ibboard\bin\Debug\IBBoard.pdb
-C:\Users\Lewis\Dev\CS\relic-tools\ibboard\obj\Debug\IBBoard.dll
-C:\Users\Lewis\Dev\CS\relic-tools\ibboard\obj\Debug\IBBoard.pdb
-C:\Users\Lewis\Dev\CS\relic-tools\ibboard\obj\Debug\ResolveAssemblyReference.cache

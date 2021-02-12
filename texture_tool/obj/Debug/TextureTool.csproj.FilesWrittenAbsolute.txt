@@ -1,2 +1,0 @@
-C:\Users\Lewis\Dev\CS\relic-tools\obj\Debug\.NETFramework,Version=v4.0.AssemblyAttribute.cs
-C:\Users\Lewis\Dev\CS\relic-tools\obj\Debug\IBBoard.Relic.TextureTool.TextureTool.exe.manifest
